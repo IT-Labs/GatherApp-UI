@@ -36,11 +36,7 @@ export const validationSchemas = {
     emailSchema: z
       .string()
       .email({ message: "Please enter a valid email address." })
-      .max(80, { message: "The max length is reached." })
-      .refine(
-        (data) => data.includes("it-labs.com"),
-        "Email must contain it-labs.com domain."
-      ),
+      .max(80, { message: "The max length is reached." }),
     nameSchema: z
       .string()
       .min(2, { message: "You can't use less than 2 characters." })
