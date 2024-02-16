@@ -16,7 +16,7 @@ GatherApp is a platform aimed at enabling companies to create, encourage, and nu
 
 Users can create various types of events, such as online events for a select group of colleagues or on-site company events for all employees. This document pertains to the front-end part of the GatherApp project.
 
-The back-end part of this project can be found [here](#).
+The back-end part of this project can be found [here](https://github.com/IT-Labs/GatherApp-.NET).
 
 ## Accessing the Application
 
