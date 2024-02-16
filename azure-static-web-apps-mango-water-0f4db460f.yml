@@ -1,0 +1,27 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger: 
+  - main
+
+variables:
+  - group: VG-Gather-app
+
+steps:
+  - checkout: self
+    submodules: true
+
+  - task: ReplaceTokens@3
+    inputs:
+      rootDirectory: '$(Build.SourcesDirectory)'
+      targetFiles: '**/.env'
+      tokenPrefix: '{{'
+      tokenSuffix: '}}'
+
+  - task: AzureStaticWebApp@0
+    inputs:
+      app_location: ""
+      output_location: "build"
+      azure_static_web_apps_api_token: $(ApiToken)
