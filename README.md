@@ -10,6 +10,8 @@
 
 ---
 
+**IMPORTANT: Credit where credit is due. This app is the end product of the amazing work put in by the participants in our latest Internship program – showing off their amazing technical skills, but also ability to truly cooperate and collaborate!**
+
 ## Introduction
 
 GatherApp is a platform aimed at enabling companies to create, encourage, and nurture an environment where employees can create and share social events. This empowers employees to have greater control over their work-life balance by distinguishing work-related priorities from other social events.
