@@ -3,10 +3,11 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Accessing the Application](#accessing-the-application)
-3. [Setup](#setup)
-4. [Component Documentation](#component-documentation)
-5. [How to Contribute to the Project](#how-to-contribute-to-the-project)
+2. [Features](#features)
+3. [Accessing the Application](#accessing-the-application)
+4. [Setup](#setup)
+5. [Component Documentation](#component-documentation)
+6. [How to Contribute to the Project](#how-to-contribute-to-the-project)
 
 ---
 
@@ -19,6 +20,26 @@ GatherApp is a platform aimed at enabling companies to create, encourage, and nu
 Users can create various types of events, such as online events for a select group of colleagues or on-site company events for all employees. This document pertains to the front-end part of the GatherApp project.
 
 The back-end part of this project can be found [here](https://github.com/IT-Labs/GatherApp-.NET).
+
+## Features
+
+User and Admin:
+
+- **Authentication Options**: Support for custom login or Microsoft Single Sign-On (SSO).
+- **Attend Public or Invited Events**: Users can attend public events or those they've been personally invited to.
+- **Integrated Calendar**: Users have access to a built-in calendar within the application for managing their events.
+- **Outlook Calendar Integration**: Events can seamlessly sync with Outlook calendars. If not logged in, users are prompted to authenticate before adding events to Outlook.
+
+User Role:
+
+- **Create Events**: Users can create individual events which require approval, unless scheduled on weekends.
+
+Admin Role:
+
+- **Create Events**: Admins can create individual or company events which are automatically approved.
+- **Event Approval**: Admins have the authority to approve or decline event requests from users.
+
+For more detailed informations, check our user guide [here](https://github.com/IT-Labs/GatherApp-UI/blob/main/GatherApp-Userguide.pdf).
 
 ## Accessing the Application
 
@@ -39,10 +60,12 @@ To access the frontend:
 
 To start the application:
 
-1. Ensure Node.js and npm are installed.
+1. Install [Node.js](https://nodejs.org/en)
 2. Open the terminal and run:
-   ```
+   ```bash
    npm install
+   ```
+   ```bash
    npm start
    ```
 
@@ -50,7 +73,7 @@ To start the application:
 
 The way we can access the component documentation is with Storybook, which isolates our components so we can test them and add comments on what that specific component does. To run, just type in
 
-```
+```bash
 npm run storybook
 ```
 
